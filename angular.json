@@ -121,6 +121,46 @@
           }
         }
       }
+    },
+    "ratify": {
+      "root": "projects/ratify",
+      "sourceRoot": "projects/ratify/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ratify/tsconfig.lib.json",
+            "project": "projects/ratify/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/ratify/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ratify/src/test.ts",
+            "tsConfig": "projects/ratify/tsconfig.spec.json",
+            "karmaConfig": "projects/ratify/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ratify/tsconfig.lib.json",
+              "projects/ratify/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "angular-component-library"
