@@ -106,14 +106,14 @@ export class AppComponent {
 # Component on screen
 1. Initial rendering  
 
-![Initial component rendered image](https://raw.githubusercontent.com/mohanramphp/angular-component-library/master/src/assets/images/initial-rendered-component.png)
+    ![Initial component rendered image](https://raw.githubusercontent.com/mohanramphp/angular-component-library/master/src/assets/images/initial-rendered-component.png)
 
 2. While user hovering on rating component  
 
-![Hovering on rating component image](https://raw.githubusercontent.com/mohanramphp/angular-component-library/master/src/assets/images/hovering.png)
+    ![Hovering on rating component image](https://raw.githubusercontent.com/mohanramphp/angular-component-library/master/src/assets/images/hovering.png)
 
 3. Once, user rate  
 
-![Rating component image](https://raw.githubusercontent.com/mohanramphp/angular-component-library/master/src/assets/images/final.png)
+    ![Rating component image](https://raw.githubusercontent.com/mohanramphp/angular-component-library/master/src/assets/images/final.png)
 
 > Thank you, give a try. Welcome!
