@@ -1,8 +1,15 @@
 {
   "name": "angular-ratify",
-  "description":"This repository is an Angular component library which holds all kind of rating components needed for angular application development",
-  "version": "0.0.1",
-  "author" : "Mohan Ram <mohanramjavascript@gmail.com>",
+  "description": "This repository is an Angular component library which holds all kind of rating components needed for angular application development",
+  "version": "0.0.4",
+  "keywords": [
+    "angular rating",
+    "rating component",
+    "rate it",
+    "stars",
+    "rating feedback"
+  ],
+  "author": "Mohan Ram <mohanramjavascript@gmail.com>",
   "license": "MIT",
   "engines": {
     "node": ">=8.9.1 <9.0.0",
