@@ -14,23 +14,44 @@ After, generating an angular application for the demo we will follow below steps
 7. There are two ways angular registers external libraries.  
     1. NPM Module declarations in the ```package.json``` file.
     2. Library registered in the ```tsconfig.json``` file
-> Note: Since we generated library with our application. Angular registered our library by placing library dependency entries in ```angular.json``` and ```tsconfig.json```
+    > Note: Since we generated library with our application. Angular registered our library by placing library dependency entries in ```angular.json``` and ```tsconfig.json```
 8. We have added few scripts to built the library and pack for npm in ```package.json ```  
 ```javascript
 "scripts": {
-    "prestart": "npm install",
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
+    ...
+    ...
     "build-lib": "ng build --prod ratify",
     "npm-pack": "cd dist/ratify && npm pack",
     "package": "npm run build-lib && npm run npm-pack"
   }
   ```
   > Last three commands (**build-lib, npm-pack, package**) are responsible for building and packing the library for npm
+
+9. Run ```npm run package``` to create npm ready library in ```dist/ratify```
+
+
+Finally, lets see how to publish npm package
+
+  1. Add npm user by running below command  
+  ```npm adduser```
+ > Note: 
+ > 1. If you are not signed up above command will sign up you as npm user.
+ > 2. Type ```npm whoami``` from a terminal to see if you are already logged in (technically, this also means that your credentials have been stored locally).
+ 2. Login into npm by running  
+ ```npm login```
+ 3. Go to the packaged output in ```dist/ratify```
+
+ ```cmd
+ > cd dist/ratify
+ > dist/ratify> npm publish
+ ```
+
+ npm package will be uploaded to the **[npm registry - angular-ratify](https://www.npmjs.com/package/angular-ratify)**
+
+
+
+
+
   
 
 
