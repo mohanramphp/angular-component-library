@@ -2,12 +2,16 @@
   "name": "angular-component-library",
   "version": "0.0.0",
   "scripts": {
+    "prestart": "npm install",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-lib": "ng build --prod ratify",
+    "npm-pack": "cd dist/ratify && npm pack",
+    "package": "npm run build-lib && npm run npm-pack"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +26,8 @@
     "@angular/router": "^6.0.3",
     "core-js": "^2.5.4",
     "rxjs": "^6.0.0",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "font-awesome": "^4.7.0"
   },
   "devDependencies": {
     "@angular/compiler-cli": "^6.0.3",

@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  grade = 0;
+  maxRating = 5;
+  showRatingCounter = true;
+  myRating: number;
+
+  selectedRating(rate: number) {
+    console.log('your rating is');
+    console.log(rate);
+    this.myRating = rate;
+  }
 }
