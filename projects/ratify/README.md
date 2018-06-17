@@ -11,7 +11,7 @@ For now, one component is added in this library
 
 # How to use?
 
-1. Include our ```angular-ratify``` module in ```app.module.ts```
+* Include our ```angular-ratify``` module in ```app.module.ts```
 ```javascript
 import { RatifyModule } from 'angular-ratify';
 
@@ -29,7 +29,7 @@ import { RatifyModule } from 'angular-ratify';
 export class AppModule { }
 ```
 
-2. Add the component ```<lib-ratify>``` where rating part is expected in your application
+* Add the component ```<lib-ratify>``` where rating part is expected in your application
 
 ---
 
