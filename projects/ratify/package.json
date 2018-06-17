@@ -1,7 +1,7 @@
 {
   "name": "angular-ratify",
   "description": "This repository is an Angular component library which holds all kind of rating components needed for angular application development",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "keywords": [
     "angular rating",
     "rating component",
