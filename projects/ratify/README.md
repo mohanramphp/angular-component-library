@@ -1,6 +1,6 @@
 # Angular Ratify
 
-> This angular component library is planned to hold all different sort of rating components needed for an angular application development.
+> This angular component library is planned to hold different sort of rating components needed for an angular application development.
 
 For now, one component is added in this library
 ```html
@@ -11,7 +11,7 @@ For now, one component is added in this library
 
 # How to use?
 
-1. Include our ratify module in ```app.module.ts```
+1. Include our ```angular-ratify``` module in ```app.module.ts```
 ```javascript
 import { RatifyModule } from 'angular-ratify';
 
@@ -31,7 +31,9 @@ export class AppModule { }
 
 2. Add the component ```<lib-ratify>``` where rating part is expected in your application
 
-> To brief the signatures of the components as below
+---
+
+## To brief the signatures of the components as below
 
 1. ```[grade]``` - pass the rating number to the app i.e. - If rating has to be pre-selected. **grade** - hold the default value of rating. | __type: *number*__
 2. ```[maxRating]``` - pass the maximum rating stars needs to be rendered by that component. | __type: *number*__
@@ -103,16 +105,16 @@ export class AppComponent {
 
 ```
 
-# Component on screen
-1. Initial rendering  
+# Snapshots
+* Initial rendering  
 
     ![Initial component rendered image](https://raw.githubusercontent.com/mohanramphp/angular-component-library/master/src/assets/images/initial-rendered-component.png)
 
-2. While user hovering on rating component  
+* While user hovering on rating component  
 
     ![Hovering on rating component image](https://raw.githubusercontent.com/mohanramphp/angular-component-library/master/src/assets/images/hovering.png)
 
-3. Once, user rate  
+* Once, user rate  
 
     ![Rating component image](https://raw.githubusercontent.com/mohanramphp/angular-component-library/master/src/assets/images/final.png)
 
